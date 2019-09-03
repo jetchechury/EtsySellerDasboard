@@ -1,0 +1,16 @@
+config.py
+Database/jetchdashboard-firebase-adminsdk-x0h1n-c05f3d8b56.json
+pythonanywhere/jetchdashboard-firebase-adminsdk-x0h1n-c05f3d8b56.json
+jetchdashboard-firebase-adminsdk-x0h1n-c05f3d8b56.json
+TableauDashboard/JEtchDashboard-6fefe9b3d4c3.json
+.ipynb_checkpoints
+FinancialStatements
+/AppEndpoints/Archive
+/DataCollection/Archive
+Data/
+Historical_Data
+Production
+UploadToFirebase
+WorkingArchivedFiles
+TableauDashboard/Images
+.DS_Store

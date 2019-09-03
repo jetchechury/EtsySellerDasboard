@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+        integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+    <script src="../static/js/tablesort.js"></script>
+    <script src='../static/js/tablesort.number.js'></script>
+    <link rel='icon' href='https://120555287-360052210257081648.preview.editmysite.com/uploads/1/2/0/5/120555287/360052210257081648/favpreview.gif?232342' type='image/x-icon'/ >
+
+
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+    <title>J Etch Hub</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">J ETCH CREATIONS HUB</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Etsy
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="https://www.etsy.com/your/orders/sold?ref=seller-platform-mcnav" target="_blank">Orders</a>
+                        <a class="dropdown-item" href="https://www.etsy.com/conversations?ref=seller-platform-mcnav" target="_blank">Send a Message</a>
+                        <a class="dropdown-item" href="https://www.etsy.com/your/account/payments?ref=seller-platform-mcnav" target="_blank">Finances</a>
+                        <a class="dropdown-item" href=https://www.etsy.com/your/shops/me/sales-coupons?ref=seller-platform-mcnav target="_blank">Coupons</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Social Media
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="https://www.facebook.com/jetchcreations/" target="_blank">Facebook</a>
+                        <a class="dropdown-item" href="https://www.instagram.com/jetchcreations/?hl=en" target="_blank">Instagram</a>
+                        <a class="dropdown-item" href="https://www.pinterest.com" target="_blank">Pinterest</a>
+                        <a class="dropdown-item" href="https://www.planoly.com/user/dashboard" target="_blank">Planoly</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.weebly.com/app/home/users/120555287/sites/360052210257081648/dashboard" target="_blank">Weebly</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://public.tableau.com/views/JEtchDashboardExtras/Story1?:embed=y&:display_count=yes&publish=yes&:origin=viz_share_link" target="_blank">Tableau</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeUWYz6bgJ7GCwqhz6tDN9uiPvs0N83OmSs0_SFIDNvgYxMQQ/viewform?usp=sf_link" target="_blank">Shipping Notification</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12">
+                <div id="order_stats">
+                    <h2>Order Stats <span id="spanDate"></span></h2>
+                    <table class="pure-table-striped orderStats" style='width:100%;margin-bottom:5px;'>
+                        <thead>
+                            <tr>
+                                <th>Avg Order Time</th>
+                                <th>Orders</th>
+                                <th>Order Net</th>
+                            </tr>
+                        </thead>
+                        <tbody id="orderStatsBody"></tbody>
+                    </table>
+                </div>
+                <div id="open_orders">
+                    <table class="pure-table-striped" style='width:100%;margin-bottom:5px;'>
+                        <thead>
+                            <tr>
+                                <th>Buyer</th>
+                                <th>Order Date</th>
+                                <th>Ship By</th>
+                                <th>Time Left</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="openOrdersBody"></tbody>
+                    </table>
+                </div>
+                <div id="pending_reviews">
+                    <h2>Pending Reviews</h2>
+                    <table class="pure-table-striped" style='width:100%;margin-bottom:5px;'>
+                        <thead>
+                            <tr>
+                                <th>Buyer</th>
+                                <th>Time Pending</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="reviewsBody"></tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <div id="list_stats">
+                            <h2>Social Stats</h2>
+                            <table class="pure-table-striped list_stats" style='width:100%;margin-bottom:5px;'>
+                                <thead>
+                                    <tr class='pure-table-odd'>
+                                        <th>Visits</th>
+                                        <th>Favorites</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="listStats"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <div>
+                            <!--<table class="pure-table-striped" style='width:100%;margin-bottom:5px;'>-->
+                            <!--    <thead>-->
+                            <!--        <tr>-->
+                            <!--            <th>Shop Age</th>-->
+                            <!--            <th></th>-->
+                            <!--        </tr>-->
+                            <!--    </thead>-->
+                            <!--    <tbody id="shopAge"></tbody>-->
+                            <!--</table>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+
+                <div class='tableauPlaceholder' id='viz1566413118305' style='position: relative'><noscript><a href='#'><img alt=' '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;JE&#47;JEtchTableauDashboard&#47;Dashboard2&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='JEtchTableauDashboard&#47;Dashboard2' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;JE&#47;JEtchTableauDashboard&#47;Dashboard2&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='filter' value='publish=yes' /></object></div>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1566413118305');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    vizElement.style.width = '1000px'; vizElement.style.height = '827px';
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <div id="estimated_visits">
+                    <h2>Estimated Visits by Listing <h3>Information based on Bayes Theorem - Expected Avg Visits Per Day
+                            = 0.85</h3>
+                    </h2>
+                    <table class="pure-table-striped" id='sort' style='width:100%;margin-bottom:5px;'>
+                        <thead>
+                            <tr>
+                                <th class='js-sort-number' style='cursor:pointer'>Listing ID</th>
+                                <th class='js-sort-number' style='cursor:pointer'>Days Active</th>
+                                <th class='js-sort-number' style='cursor:pointer'>Listing Visits</th>
+                                <th class='js-sort-number' style='cursor:pointer'>Total Site Visits (Since Active)</th>
+                                <th class='js-sort-number' style='cursor:pointer'>Current Visits/Day</th>
+                                <th class='js-sort-number' style='cursor:pointer'>Est. Avg Visits/Day</th>
+                                <th class='js-sort-number' style='cursor:pointer'>Est. Min Visits/Day</th>
+                                <th class='js-sort-number' style='cursor:pointer'>Est. Max Visits/Day</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="bayesTestTable"></tbody>
+                    </table>
+                </div>
+            </div>
+            <footer>
+                <div class="footer">Copyright &copy; Jessica Etchechury 2019</div>
+            </footer>
+            <script src="../static/js/info.js"></script>
+            <script type="text/javascript">
+                var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                var today = new Date();
+                today.setTime(today.getTime());
+                document.getElementById("spanDate").innerHTML = 'For the month of ' + months[today.getMonth()];
+            </script>
+            <script>
+                new Tablesort(document.getElementById('sort'));
+            </script>
+
+</body>
+
+</html>

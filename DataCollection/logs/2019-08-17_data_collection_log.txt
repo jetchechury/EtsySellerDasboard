@@ -1,0 +1,11 @@
+----------------------------------------------
+DATA COLLECTION LOG FOR 2019-08-17
+----------------------------------------------
+2019-08-18 20:22:18.765716 Successful 1st Attempt Login
+2019-08-18 20:22:44.723606 Favorites and reviews scraped
+2019-08-18 20:22:44.766197 DF Complete- favorites
+2019-08-18 20:22:46.330016 Firebase- 3 records added to Favorites
+2019-08-18 20:22:46.370874 DF Complete- reviews
+2019-08-18 20:22:46.544992 Firebase- 0 records added to Reviews
+2019-08-18 20:22:50.023018 DF Complete- reviews2_df
+2019-08-18 20:22:50.023663 DF EMPTY- Reviews2

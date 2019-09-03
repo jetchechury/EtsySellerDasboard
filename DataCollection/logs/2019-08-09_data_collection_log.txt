@@ -1,0 +1,54 @@
+----------------------------------------------
+DATA COLLECTION LOG FOR 2019-08-09
+----------------------------------------------
+2019-08-10 00:01:27.905047 Successful 1st Attempt Login
+2019-08-10 00:01:56.716556 Favorites and reviews scraped
+2019-08-10 00:01:56.748644 DF Complete- favorites
+2019-08-10 00:01:59.234573 Firebase- 15 records added to Favorites
+2019-08-10 00:01:59.235533 DF EMPTY- Reviews
+2019-08-10 00:02:03.594585 DF Complete- reviews2_df
+2019-08-10 00:02:03.731586 Firebase- 0 records added to Reviews2
+2019-08-10 00:02:09.878774 Listing IDs scraped
+2019-08-10 00:03:52.796101 Listing stats scraped
+2019-08-10 00:03:52.799323 DF Complete- listing_stats_df
+2019-08-10 00:01:01.471933 Firebase- 28 records added to Listing_Stats
+2019-08-10 00:03:59.828036 DF Complete- buyer_contact
+2019-08-10 00:04:10.438105 Open orders scraped
+2019-08-10 00:04:10.441301 DF Complete- orders_df_temp2
+2019-08-10 00:04:10.443258 DF Complete- open_orders_df
+2019-08-10 00:04:15.130491 Search terms scraped
+2019-08-10 00:04:15.133224 DF Complete- search_terms_df
+2019-08-10 00:04:53.866125 CSV download complete
+2019-08-10 00:04:53.904158 CSV to pandas df complete
+2019-08-10 00:04:53.905628 CSV transfer complete
+2019-08-10 00:04:57.135320 DF Complete- orderNet_df
+2019-08-10 00:05:04.133888 Listing images scraped
+2019-08-10 00:05:11.665240 Listing information scraped
+2019-08-10 00:05:11.669216 DF Complete- listing_id_df
+2019-08-10 00:05:11.805807 Firebase- 0 records added to Listing_IDs
+2019-08-10 00:05:11.806809 DF Complete- listing_id_creation_df
+2019-08-10 00:05:11.806969 DF EMPTY- listing_id_creation_df
+2019-08-10 00:05:11.816186 DF Complete- listing_info_df
+2019-08-10 00:05:15.376515 Firebase- 28 records added to Listing_IDs
+2019-08-10 00:05:15.383437 DF Complete- listing_shipping_df
+2019-08-10 00:05:20.393960 Firebase- 28 records added to listing_shipping
+2019-08-10 00:05:20.400233 DF Complete- listing_images_df
+2019-08-10 00:05:37.624879 Firebase- 140 records added to Listing_Images
+2019-08-10 00:05:37.630602 DF Complete- listing_categorical_df
+2019-08-10 00:05:40.784920 Firebase- 28 records added to listing_categories
+2019-08-10 00:05:40.846760 DF Complete- listing_tags_df
+2019-08-10 00:06:14.436847 Firebase- 296 records added to listing_tags
+2019-08-10 00:06:14.442318 DF Complete- production_time_df
+2019-08-10 00:06:18.328894 Firebase- 28 records added to production_et
+2019-08-10 00:06:18.334955 DF Complete- order_sold_items_df
+2019-08-10 00:06:18.494952 Firebase- 0 records added to order_items
+2019-08-10 00:06:18.501061 DF Complete- buyer_info_df
+2019-08-10 00:06:18.628019 Firebase- 0 records added to buyers
+2019-08-10 00:06:18.632104 DF Complete- shipping_addresses_df
+2019-08-10 00:06:18.770984 Firebase- 0 records added to shipping_addresses
+2019-08-10 00:06:18.809356 DF Complete- orders_df
+2019-08-10 00:06:18.942140 Firebase- 0 records added to orders
+2019-08-10 00:06:18.945769 DF Complete- orders_shipped_df
+2019-08-10 00:06:19.085748 Firebase- 0 records added to order_shipped
+2019-08-10 00:06:19.093244 DF Complete- order_payment_df
+2019-08-10 00:06:19.391412 Firebase- 0 records added to order_pay
